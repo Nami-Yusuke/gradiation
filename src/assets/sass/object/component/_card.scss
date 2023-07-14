@@ -1,0 +1,38 @@
+@charset 'UTF-8';
+@use "sass:math";
+@use "../../global" as *;
+
+/*
+  Card
+*/
+.c-card {
+  display: flex;
+  position: relative;
+  flex: 1 1 auto;
+  flex-direction: column;
+  color: inherit;
+  text-decoration: none;
+
+  &__body {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    order: 1;
+  }
+
+  &__thumbnail {
+    order: 0;
+  }
+
+  &__image {
+    width: 100%;
+  }
+}
+#CanvasContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
